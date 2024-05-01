@@ -1,0 +1,17 @@
+.loader__container {
+  background: linear-gradient(90deg, lightgray 40%, white 50%, lightgray 60%);
+  background-size: 300%;
+  background-position-x: 100%;
+  animation: shimmer 1s infinite linear;
+  border-radius: 8px;
+  cursor: wait;
+  width: 100%;
+  height: 75px;
+  margin-bottom: 20px;
+}
+
+@keyframes shimmer {
+  to {
+    background-position-x: 0%
+  }
+}

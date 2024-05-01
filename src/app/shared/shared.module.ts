@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 import { CountriesTableComponent } from './components/countries-table/countries-table.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 
 
@@ -18,6 +19,7 @@ import { CountriesTableComponent } from './components/countries-table/countries-
     ContactComponent,
     SearchBoxComponent,
     CountriesTableComponent,
+    LoaderComponent,
 
   ],
   imports: [
@@ -30,7 +32,8 @@ import { CountriesTableComponent } from './components/countries-table/countries-
     SidebarComponent,
     ContactComponent,
     SearchBoxComponent,
-    CountriesTableComponent
+    CountriesTableComponent,
+    LoaderComponent
   ]
 })
 export class SharedModule { }

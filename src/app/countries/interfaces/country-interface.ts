@@ -106,3 +106,9 @@ export interface Translation {
   official: string;
   common:   string;
 }
+
+export interface CacheStorage {
+  byCapital: { valueSearched: string; countries: Country[] };
+  byCountry: { valueSearched: string; countries: Country[] };
+  byRegion: { valueSearched: string; countries: Country[] };
+}

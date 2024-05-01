@@ -1,7 +1,8 @@
 <input type="text"
   class="form-control"
   [placeholder]="input_placeholder"
-  (keydown.enter)="search()"
+  [value]="input_value"
+  (keyup)="onKeyPress(SearchBox.value)"
   #SearchBox
   >
 <hr>

@@ -4,13 +4,17 @@
   <div class="col">
     <app-search-box
       [input_placeholder]="'Buscar por capital'"
-      (onSearch)="searchByCapital($event)">
+      [input_value]="lastSearchedTerm"
+      (onDebounce)="searchByCapital($event)">
     </app-search-box>
   </div>
 </div>
 <div class="row">
   <div class="col">
-    <app-countries-table
+
+    <app-loader *ngIf="isLoading"></app-loader>
+
+    <app-countries-table *ngIf="!isLoading"
       [countries]="countries">
     </app-countries-table>
   </div>
